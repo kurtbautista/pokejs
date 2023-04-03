@@ -33,7 +33,6 @@
   text-align: center;
 }
 
-
 .description {
   line-height: 1.5;
   font-size: 1.5rem;
@@ -44,9 +43,22 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  grid-template-columns: repeat(5, 1fr);
 
   max-width: 800px;
   margin-top: 3rem;
+}
+
+.gridCol {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .card {
